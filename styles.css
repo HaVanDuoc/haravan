@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    color: #007bff;
+}
+
+.link:hover{
+    color: #0056b3;
+}
+
+.btn-hover-vertical {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-hover-vertical:before {
+    content: '';
+    background-color: #0070d2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.btn-hover-vertical:hover:before {
+    width: 100%;
+    opacity: 1;
+}

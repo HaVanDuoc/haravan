@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- CDN Icon Font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+  <!-- CDN tailwind css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="flex flex-row justify-between items-center gap-5 p-5 text-sm">
+    <div class="flex flex-row items-center gap-5 ">
+      <div class="flex flex-row items-center gap-7 w-full">
+        <a href="/"><img src="./assets/icon/logo.svg" alt="logo" width="150px"></a>
+
+        <div class="text-xl"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+        <div>Website</div>
+        <div>Bán hàng đa kênh</div>
+        <div>Marketing</div>
+        <div>Quản lý bán hàng</div>
+        <div>Bán hàng Livestream</div>
+      </div>
+    </div>
+
+    <div class="flex flex-row items-center gap-7">
+      <a href="#">Bảng giá</a>
+      <a href="#">Khách hàng</a>
+      <a href="#">Hỗ trợ</a>
+      <a href="#" class="text-[#0070d2] uppercase font-bold text-sm border border-b-[#0070d2]">Đăng nhập</a>
+      <button class="py-2 px-4 bg-[#0070d2] text-white font-bold rounded-sm shadow-lg uppercase">Dùng thử</button>
+    </div>
+
+    <div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Banner -->
+    <section class="flex flex-row items-center bg-[#6E3E89]">
+      <div class="max-w-7xl mx-5 sm:mx-12 md:mx-20 2xl:mx-auto flex flex-row justify-between gap-24">
+        <div class="flex flex-col gap-6 py-16 text-white">
+          <ul class="flex flex-row gap-3 items-center text-sm">
+            <li><a href="#">Trang chủ Themes </a></li>
+            <div class="text-[9px]"><i class="fa-solid fa-chevron-right"></i></div>
+            <li><a href="#">Thiết kế website Thời trang</a></li>
+          </ul>
+
+          <h4 class="text-3xl font-bold">Thiết kế website Thời trang</h4>
+
+          <p>
+            Hơn bất cứ lãnh vực nào khác, các website bán hàng thời trang cần
+            phải có vẻ ngoài hiện đại, sành điệu và bắt mắt với những tín đồ
+            shopping. Các mẫu thiết kế website của Haravan dành cho thời trang
+            được đầu tư, chăm chút cẩn thận đến từng chi tiết để đáp ứng những
+            yêu cầu đặc thù của mảng này. Giờ đây việc tạo dựng và quản lý
+            website thời trang không còn là thử thách khó khăn với bạn nữa!
+          </p>
+        </div>
+
+        <div class="py-24 hidden lg:block">
+          <div class="relative flex flex-row items-center bg-white w-[320px] overflow-hidden rounded-full">
+            <div class="flex items-center justify-center p-3 text-lg opacity-60">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input type="text" placeholder="Tìm giao diện..."
+              class="flex  w-full text-meidum border-none outline-none" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- List -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-5 sm:mx-12 md:mx-20 2xl:mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+          <!-- Card Item -->
+          <div class="flex flex-col w-full border border-black hover:border-blue-400 shadow-sm 
+              hover:shadow-[0_10px_15px_-3px_rgba(96,165,250,0.3),_0_4px_6px_-2px_rgba(96,165,250,0.05)] 
+              transition-all duration-300 ease-in-out rounded-xl overflow-hidden ">
+            <div
+              class="relative flex flex-col gap-3 h-[120vw] sm:h-[100vw] md:h-[50vw] lg:max-h-[400px] overflow-hidden">
+              <img
+                src="./assets/img/5f33d85da81742dd943371ee2f4f14d9_1024x1024_e5f55171b2494daca58021c77b70f43a_1024x1024.jpg"
+                alt="" class="w-full h-auto object-cover">
+
+              <div
+                class="absolute right-3 bottom-0 w-1/2 max-h-[65%]  border-x-2 border-t-2 border-b-0 border-black rounded-tl-lg rounded-tr-lg overflow-hidden">
+                <img src="./assets/img/image_sub.jpg" alt="" class="w-full h-auto object-cover">
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-5 bg-white px-3 py-2 z-10 ">
+              <div class="flex flex-col gap-1">
+                <p class="font-bold">PopShop</p>
+                <p class="text-red-600 font-bold">1,800,000₫</p>
+              </div>
+              <div class="flex flex-row gap-1">
+                <button
+                  class="text-black text-xs font-bold uppercase p-3 flex items-center justify-center rounded flex-1 bg-gray-200 hover:bg-gray-200">
+                  Chi tiết
+                </button>
+                <button
+                  class="text-white text-xs font-bold uppercase bg-blue-500 hover:bg-blue-700 p-3 flex items-center justify-center rounded flex-1">
+                  Xem thực tế
+                </button>
+
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Item -->
+          <div class="flex flex-col w-full border border-black hover:border-blue-400 shadow-sm 
+              hover:shadow-[0_10px_15px_-3px_rgba(96,165,250,0.3),_0_4px_6px_-2px_rgba(96,165,250,0.05)] 
+              transition-all duration-300 ease-in-out rounded-xl overflow-hidden ">
+            <div
+              class="relative flex flex-col gap-3 h-[120vw] sm:h-[100vw] md:h-[50vw] lg:max-h-[400px] overflow-hidden">
+              <img
+                src="./assets/img/5f33d85da81742dd943371ee2f4f14d9_1024x1024_e5f55171b2494daca58021c77b70f43a_1024x1024.jpg"
+                alt="" class="w-full h-auto object-cover">
+
+              <div
+                class="absolute right-3 bottom-0 w-1/2 max-h-[65%]  border-x-2 border-t-2 border-b-0 border-black rounded-tl-lg rounded-tr-lg overflow-hidden">
+                <img src="./assets/img/image_sub.jpg" alt="" class="w-full h-auto object-cover">
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-5 bg-white px-3 py-2 z-10 ">
+              <div class="flex flex-col gap-1">
+                <p class="font-bold">PopShop</p>
+                <p class="text-red-600 font-bold">1,800,000₫</p>
+              </div>
+              <div class="flex flex-row gap-1">
+                <button
+                  class="text-black text-xs font-bold uppercase p-3 flex items-center justify-center rounded flex-1 bg-gray-200 hover:bg-gray-200">
+                  Chi tiết
+                </button>
+                <button
+                  class="text-white text-xs font-bold uppercase bg-blue-500 hover:bg-blue-700 p-3 flex items-center justify-center rounded flex-1">
+                  Xem thực tế
+                </button>
+
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Item -->
+          <div class="flex flex-col w-full border border-black hover:border-blue-400 shadow-sm 
+              hover:shadow-[0_10px_15px_-3px_rgba(96,165,250,0.3),_0_4px_6px_-2px_rgba(96,165,250,0.05)] 
+              transition-all duration-300 ease-in-out rounded-xl overflow-hidden ">
+            <div
+              class="relative flex flex-col gap-3 h-[120vw] sm:h-[100vw] md:h-[50vw] lg:max-h-[400px] overflow-hidden">
+              <img
+                src="./assets/img/5f33d85da81742dd943371ee2f4f14d9_1024x1024_e5f55171b2494daca58021c77b70f43a_1024x1024.jpg"
+                alt="" class="w-full h-auto object-cover">
+
+              <div
+                class="absolute right-3 bottom-0 w-1/2 max-h-[65%]  border-x-2 border-t-2 border-b-0 border-black rounded-tl-lg rounded-tr-lg overflow-hidden">
+                <img src="./assets/img/image_sub.jpg" alt="" class="w-full h-auto object-cover">
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-5 bg-white px-3 py-2 z-10 ">
+              <div class="flex flex-col gap-1">
+                <p class="font-bold">PopShop</p>
+                <p class="text-red-600 font-bold">1,800,000₫</p>
+              </div>
+              <div class="flex flex-row gap-1">
+                <button
+                  class="text-black text-xs font-bold uppercase p-3 flex items-center justify-center rounded flex-1 bg-gray-200 hover:bg-gray-200">
+                  Chi tiết
+                </button>
+                <button
+                  class="text-white text-xs font-bold uppercase bg-blue-500 hover:bg-blue-700 p-3 flex items-center justify-center rounded flex-1">
+                  Xem thực tế
+                </button>
+
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Item -->
+          <div class="flex flex-col w-full border border-black hover:border-blue-400 shadow-sm 
+              hover:shadow-[0_10px_15px_-3px_rgba(96,165,250,0.3),_0_4px_6px_-2px_rgba(96,165,250,0.05)] 
+              transition-all duration-300 ease-in-out rounded-xl overflow-hidden ">
+            <div
+              class="relative flex flex-col gap-3 h-[120vw] sm:h-[100vw] md:h-[50vw] lg:max-h-[400px] overflow-hidden">
+              <img
+                src="./assets/img/5f33d85da81742dd943371ee2f4f14d9_1024x1024_e5f55171b2494daca58021c77b70f43a_1024x1024.jpg"
+                alt="" class="w-full h-auto object-cover">
+
+              <div
+                class="absolute right-3 bottom-0 w-1/2 max-h-[65%]  border-x-2 border-t-2 border-b-0 border-black rounded-tl-lg rounded-tr-lg overflow-hidden">
+                <img src="./assets/img/image_sub.jpg" alt="" class="w-full h-auto object-cover">
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-5 bg-white px-3 py-2 z-10 ">
+              <div class="flex flex-col gap-1">
+                <p class="font-bold">PopShop</p>
+                <p class="text-red-600 font-bold">1,800,000₫</p>
+              </div>
+              <div class="flex flex-row gap-1">
+                <button
+                  class="text-black text-xs font-bold uppercase p-3 flex items-center justify-center rounded flex-1 bg-gray-200 hover:bg-gray-200">
+                  Chi tiết
+                </button>
+                <button
+                  class="text-white text-xs font-bold uppercase bg-blue-500 hover:bg-blue-700 p-3 flex items-center justify-center rounded flex-1">
+                  Xem thực tế
+                </button>
+
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Item -->
+          <div class="flex flex-col w-full border border-black hover:border-blue-400 shadow-sm 
+              hover:shadow-[0_10px_15px_-3px_rgba(96,165,250,0.3),_0_4px_6px_-2px_rgba(96,165,250,0.05)] 
+              transition-all duration-300 ease-in-out rounded-xl overflow-hidden ">
+            <div
+              class="relative flex flex-col gap-3 h-[120vw] sm:h-[100vw] md:h-[50vw] lg:max-h-[400px] overflow-hidden">
+              <img
+                src="./assets/img/5f33d85da81742dd943371ee2f4f14d9_1024x1024_e5f55171b2494daca58021c77b70f43a_1024x1024.jpg"
+                alt="" class="w-full h-auto object-cover">
+
+              <div
+                class="absolute right-3 bottom-0 w-1/2 max-h-[65%]  border-x-2 border-t-2 border-b-0 border-black rounded-tl-lg rounded-tr-lg overflow-hidden">
+                <img src="./assets/img/image_sub.jpg" alt="" class="w-full h-auto object-cover">
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-5 bg-white px-3 py-2 z-10 ">
+              <div class="flex flex-col gap-1">
+                <p class="font-bold">PopShop</p>
+                <p class="text-red-600 font-bold">1,800,000₫</p>
+              </div>
+              <div class="flex flex-row gap-1">
+                <button
+                  class="text-black text-xs font-bold uppercase p-3 flex items-center justify-center rounded flex-1 bg-gray-200 hover:bg-gray-200">
+                  Chi tiết
+                </button>
+                <button
+                  class="text-white text-xs font-bold uppercase bg-blue-500 hover:bg-blue-700 p-3 flex items-center justify-center rounded flex-1">
+                  Xem thực tế
+                </button>
+
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Item -->
+          <div class="flex flex-col w-full border border-black hover:border-blue-400 shadow-sm 
+              hover:shadow-[0_10px_15px_-3px_rgba(96,165,250,0.3),_0_4px_6px_-2px_rgba(96,165,250,0.05)] 
+              transition-all duration-300 ease-in-out rounded-xl overflow-hidden ">
+            <div
+              class="relative flex flex-col gap-3 h-[120vw] sm:h-[100vw] md:h-[50vw] lg:max-h-[400px] overflow-hidden">
+              <img
+                src="./assets/img/5f33d85da81742dd943371ee2f4f14d9_1024x1024_e5f55171b2494daca58021c77b70f43a_1024x1024.jpg"
+                alt="" class="w-full h-auto object-cover">
+
+              <div
+                class="absolute right-3 bottom-0 w-1/2 max-h-[65%]  border-x-2 border-t-2 border-b-0 border-black rounded-tl-lg rounded-tr-lg overflow-hidden">
+                <img src="./assets/img/image_sub.jpg" alt="" class="w-full h-auto object-cover">
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-5 bg-white px-3 py-2 z-10 ">
+              <div class="flex flex-col gap-1">
+                <p class="font-bold">PopShop</p>
+                <p class="text-red-600 font-bold">1,800,000₫</p>
+              </div>
+              <div class="flex flex-row gap-1">
+                <button
+                  class="text-black text-xs font-bold uppercase p-3 flex items-center justify-center rounded flex-1 bg-gray-200 hover:bg-gray-200">
+                  Chi tiết
+                </button>
+                <button
+                  class="text-white text-xs font-bold uppercase bg-blue-500 hover:bg-blue-700 p-3 flex items-center justify-center rounded flex-1">
+                  Xem thực tế
+                </button>
+
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Item -->
+          <div class="flex flex-col w-full border border-black hover:border-blue-400 shadow-sm 
+              hover:shadow-[0_10px_15px_-3px_rgba(96,165,250,0.3),_0_4px_6px_-2px_rgba(96,165,250,0.05)] 
+              transition-all duration-300 ease-in-out rounded-xl overflow-hidden ">
+            <div
+              class="relative flex flex-col gap-3 h-[120vw] sm:h-[100vw] md:h-[50vw] lg:max-h-[400px] overflow-hidden">
+              <img
+                src="./assets/img/5f33d85da81742dd943371ee2f4f14d9_1024x1024_e5f55171b2494daca58021c77b70f43a_1024x1024.jpg"
+                alt="" class="w-full h-auto object-cover">
+
+              <div
+                class="absolute right-3 bottom-0 w-1/2 max-h-[65%]  border-x-2 border-t-2 border-b-0 border-black rounded-tl-lg rounded-tr-lg overflow-hidden">
+                <img src="./assets/img/image_sub.jpg" alt="" class="w-full h-auto object-cover">
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-5 bg-white px-3 py-2 z-10 ">
+              <div class="flex flex-col gap-1">
+                <p class="font-bold">PopShop</p>
+                <p class="text-red-600 font-bold">1,800,000₫</p>
+              </div>
+              <div class="flex flex-row gap-1">
+                <button
+                  class="text-black text-xs font-bold uppercase p-3 flex items-center justify-center rounded flex-1 bg-gray-200 hover:bg-gray-200">
+                  Chi tiết
+                </button>
+                <button
+                  class="text-white text-xs font-bold uppercase bg-blue-500 hover:bg-blue-700 p-3 flex items-center justify-center rounded flex-1">
+                  Xem thực tế
+                </button>
+
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Item -->
+          <div class="flex flex-col w-full border border-black hover:border-blue-400 shadow-sm 
+              hover:shadow-[0_10px_15px_-3px_rgba(96,165,250,0.3),_0_4px_6px_-2px_rgba(96,165,250,0.05)] 
+              transition-all duration-300 ease-in-out rounded-xl overflow-hidden ">
+            <div
+              class="relative flex flex-col gap-3 h-[120vw] sm:h-[100vw] md:h-[50vw] lg:max-h-[400px] overflow-hidden">
+              <img
+                src="./assets/img/5f33d85da81742dd943371ee2f4f14d9_1024x1024_e5f55171b2494daca58021c77b70f43a_1024x1024.jpg"
+                alt="" class="w-full h-auto object-cover">
+
+              <div
+                class="absolute right-3 bottom-0 w-1/2 max-h-[65%]  border-x-2 border-t-2 border-b-0 border-black rounded-tl-lg rounded-tr-lg overflow-hidden">
+                <img src="./assets/img/image_sub.jpg" alt="" class="w-full h-auto object-cover">
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-5 bg-white px-3 py-2 z-10 ">
+              <div class="flex flex-col gap-1">
+                <p class="font-bold">PopShop</p>
+                <p class="text-red-600 font-bold">1,800,000₫</p>
+              </div>
+              <div class="flex flex-row gap-1">
+                <button
+                  class="text-black text-xs font-bold uppercase p-3 flex items-center justify-center rounded flex-1 bg-gray-200 hover:bg-gray-200">
+                  Chi tiết
+                </button>
+                <button
+                  class="text-white text-xs font-bold uppercase bg-blue-500 hover:bg-blue-700 p-3 flex items-center justify-center rounded flex-1">
+                  Xem thực tế
+                </button>
+
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Mẫu website theo ngành hàng -->
+    <section class="bg-gray-100 py-20 border-t border-b border-gray-200">
+      <div class="max-w-7xl mx-5 sm:mx-12 md:mx-20 2xl:mx-auto flex flex-col gap-10">
+        <!-- Title -->
+        <div class="flex flex-col gap-3">
+          <h3 class="text-4xl md:text-5xl font-bold">Mẫu website theo ngành hàng</h3>
+          <p class="text-base md:text-lg">Tìm giao diện mẫu Website đẹp theo ngành hàng</p>
+        </div>
+
+        <!-- List -->
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-7">
+          <!-- ITEM NGÀNH HÀNG -->
+          <section
+            class="relative flex justify-center items-center rounded hover:-translate-y-1 transition-transform ease-in-out easeInOut hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+            <p
+              class="z-10 text-sm md:text-lg lg:text-2xl text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+              Thiết kế web Thời trang
+            </p>
+            <div class="flex "><img src="/assets/img/thoitrang_1115174af3af448ca9d9ee2b9338ac94_large.jpg" alt="" />
+            </div>
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+          </section>
+          <!-- ITEM NGÀNH HÀNG -->
+          <section
+            class="relative flex justify-center items-center rounded hover:-translate-y-1 transition-transform ease-in-out easeInOut hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+            <p
+              class="z-10 text-sm md:text-lg lg:text-2xl text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+              Thiết kế web Thời trang
+            </p>
+            <div class="flex "><img src="/assets/img/thoitrang_1115174af3af448ca9d9ee2b9338ac94_large.jpg" alt="" />
+            </div>
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+          </section>
+          <!-- ITEM NGÀNH HÀNG -->
+          <section
+            class="relative flex justify-center items-center rounded hover:-translate-y-1 transition-transform ease-in-out easeInOut hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+            <p
+              class="z-10 text-sm md:text-lg lg:text-2xl text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+              Thiết kế web Thời trang
+            </p>
+            <div class="flex "><img src="/assets/img/thoitrang_1115174af3af448ca9d9ee2b9338ac94_large.jpg" alt="" />
+            </div>
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+          </section>
+          <!-- ITEM NGÀNH HÀNG -->
+          <section
+            class="relative flex justify-center items-center rounded hover:-translate-y-1 transition-transform ease-in-out easeInOut hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+            <p
+              class="z-10 text-sm md:text-lg lg:text-2xl text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+              Thiết kế web Thời trang
+            </p>
+            <div class="flex "><img src="/assets/img/thoitrang_1115174af3af448ca9d9ee2b9338ac94_large.jpg" alt="" />
+            </div>
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+          </section>
+          <!-- ITEM NGÀNH HÀNG -->
+          <section
+            class="relative flex justify-center items-center rounded hover:-translate-y-1 transition-transform ease-in-out easeInOut hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+            <p
+              class="z-10 text-sm md:text-lg lg:text-2xl text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+              Thiết kế web Thời trang
+            </p>
+            <div class="flex "><img src="/assets/img/thoitrang_1115174af3af448ca9d9ee2b9338ac94_large.jpg" alt="" />
+            </div>
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+          </section>
+          <!-- ITEM NGÀNH HÀNG -->
+          <section
+            class="relative flex justify-center items-center rounded hover:-translate-y-1 transition-transform ease-in-out easeInOut hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+            <p
+              class="z-10 text-sm md:text-lg lg:text-2xl text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+              Thiết kế web Thời trang
+            </p>
+            <div class="flex "><img src="/assets/img/thoitrang_1115174af3af448ca9d9ee2b9338ac94_large.jpg" alt="" />
+            </div>
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+          </section>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="text-center">
+          <a href="#" class="link">Xem các website</a> mẫu của khách hàng đã tin tưởng sử dụng
+          Haravan.
+        </div>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section>
+      <div class="max-w-5xl mx-5 sm:mx-12 md:mx-20 xl:mx-auto bg-white py-16 text-center flex flex-col gap-7">
+        <h3 class="font-bold text-xl sm:text-2xl md:text-4xl">Bạn vẫn chưa tìm được giao diện website vừa ý</h3>
+        <p class="text-sm sm:text-base md:text-medium opacity-70">Bạn có thể gợi ý cho chúng tôi về giao diện website
+          mong muốn của bạn,
+          giao diện có thể giúp bạn kinh doanh hiệu quả.</p>
+
+        <!-- Form -->
+        <div class="flex flex-col gap-3">
+          <!-- input -->
+          <div class="flex flex-col sm:flex-row gap-3 md:gap-5 w-full">
+
+            <div class="relative w-full" data-twe-input-wrapper-init>
+              <input type="text" class="peer block min-h-[auto] w-full rounded border border-gray-300 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear 
+                       focus:ring-2 focus:ring-blue-400 focus:border-transparent 
+                       placeholder:opacity-0 peer-focus:placeholder:opacity-100 
+                       data-[twe-input-state-active]:placeholder:opacity-100 
+                       motion-reduce:transition-none dark:text-white 
+                       dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill 
+                       dark:peer-focus:text-primary" id="exampleFormControlInput2" placeholder=" " />
+              <!-- Thêm khoảng trắng vào placeholder -->
+
+              <label for="exampleFormControlInput2" class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out 
+                       peer-placeholder-shown:top-0 
+                       peer-placeholder-shown:left-3 
+                       peer-focus:-translate-y-[1.15rem] 
+                       peer-focus:scale-[0.8] 
+                       peer-focus:text-blue-500  
+                       peer-data-[twe-input-state-active]:-translate-y-[1.15rem] 
+                       peer-data-[twe-input-state-active]:scale-[0.8] 
+                       motion-reduce:transition-none dark:text-neutral-400 
+                       dark:peer-focus:text-primary">Họ tên của bạn
+              </label>
+            </div>
+
+            <div class="relative w-full" data-twe-input-wrapper-init>
+              <input type="text" class="peer block min-h-[auto] w-full rounded border border-gray-300 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear 
+                       focus:ring-2 focus:ring-blue-400 focus:border-transparent 
+                       placeholder:opacity-0 peer-focus:placeholder:opacity-100 
+                       data-[twe-input-state-active]:placeholder:opacity-100 
+                       motion-reduce:transition-none dark:text-white 
+                       dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill 
+                       dark:peer-focus:text-primary" id="exampleFormControlInput2" placeholder=" " />
+              <!-- Thêm khoảng trắng vào placeholder -->
+
+              <label for="exampleFormControlInput2" class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out 
+                       peer-placeholder-shown:top-0 
+                       peer-placeholder-shown:left-3 
+                       peer-focus:-translate-y-[1.15rem] 
+                       peer-focus:scale-[0.8] 
+                       peer-focus:text-blue-500  
+                       peer-data-[twe-input-state-active]:-translate-y-[1.15rem] 
+                       peer-data-[twe-input-state-active]:scale-[0.8] 
+                       motion-reduce:transition-none dark:text-neutral-400 
+                       dark:peer-focus:text-primary">Email của bạn
+              </label>
+            </div>
+          </div>
+
+          <!-- Textarea -->
+          <div class="mb-3 w-full">
+            <textarea
+              class="block w-full h-32 rounded border border-gray-300 p-2 focus:border-blue-500 focus:ring-2 outline-none transition-all duration-200 ease-in-out"
+              placeholder="Bạn vui lòng nhập nội dung"></textarea>
+          </div>
+
+          <!-- button -->
+          <div class="flex flex-row gap-3 w-full justify-center">
+            <button
+              class="text-white text-lg uppercase py-4 px-10 md:px-20 rounded bg-orange-500 hover:bg-orange-400 transition-all duration-300 ease-in-out">
+              Gửi góp ý
+            </button>
+            <button
+              class="text-white text-lg uppercase py-4 px-10 rounded bg-gray-400 hover:bg-gray-300 transition-all duration-300 ease-in-out">
+              Hủy
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--  -->
+    <section class="bg-blue-800">
+      <div class="flex flex-col lg:flex-row items-center gap-7 py-16 px-5 md:p-16">
+        <div class="gap-7 lg:py-24 xl:pl-[200px] xl:pr-20 lg:w-1/2 bg-blue-800">
+          <h3 class="text-4xl font-bold text-white">
+            Bán hàng hiệu quả hơn với kho ứng dụng Haraweb
+          </h3>
+          <p class="text-white text-lg my-7">Hơn 100 ứng dụng từ bán hàng, khuyến mãi, marketing đến quản lý, chăm sóc
+            khách
+            hàng giúp bạn lựa chọn dễ
+            dàng theo nhu cầu và tối ưu quản lý - phát triển bán hàng hiệu quả.</p>
+          <button
+            class="text-white font-bold text-xl uppercase w-full md:w-auto bg-yellow-500 py-4 px-10 rounded shadow-lg btn-hover-vertical">
+            Tìm hiểu thêm
+          </button>
+        </div>
+
+        <div class="flex lg:w-1/2 bg-white">
+          <img src="./assets/img/hrweb-zoneapps_02_751d917548304dce804d93c42b0aa2e3.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-[url('./assets/img/hrvhome-bottom-bg_04f3790413d7461db4c4a0584660b8cb.png')] bg-cover bg-center relative">
+      <div
+        class="max-w-7xl mx-5 sm:mx-12 md:mx-20 2xl:mx-auto text-xl font-bold flex flex-col justify-center items-center gap-10 h-full py-10 min-h-[400px]">
+        <div class="text-xl sm:text-3xl md:text-4xl font-semibold text-center flex flex-col gap-3">
+          <p>Hơn 60.000 doanh nghiệp và chủ shop đã đăng ký sử dụng</p>
+          <p>Trải nghiệm hoàn toàn <span class="text-red-500 uppercase">miễn phí 14 ngày</span></p>
+        </div>
+
+        <button
+          class="w-full md:w-auto text-white font-bold text-xl uppercase bg-yellow-500 py-4 px-10 rounded shadow-lg btn-hover-vertical">
+          bắt đầu miễn phí
+        </button>
+      </div>
+    </section>
+
+    <footer class="bg-gray-100">
+      <!--  -->
+      <section class="border-t border-b border-gray-300 p-5">
+        <div class="max-w-7xl mx-5 sm:mx-12 md:mx-20 2xl:mx-auto">
+
+          <div class="flex flex-col lg:flex-row items-center gap-10 pb-10">
+            <!-- logo -->
+            <a href="#">
+              <div class="w-[210px] text-[#08589d]">
+                <img src="assets/icon/logo.svg" alt="logo" class="w-full h-auto fill-[#08589d]">
+              </div>
+            </a>
+
+            <!-- media -->
+            <div class="flex flex-col gap-3 flex-1 justify-start items-end">
+              <h4 class="font-bold">KẾT NỐI VỚI HARAVAN</h4>
+
+              <div class="flex flex-row gap-3 group relative">
+                <a href="#"
+                  class="text-medium rounded-full bg-gray-700 w-[35px] h-[35px] flex justify-center items-center text-white cursor-pointer"><i
+                    class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"
+                  class="text-medium rounded-full bg-gray-700 w-[35px] h-[35px] flex justify-center items-center text-white cursor-pointer"><i
+                    class="fa-brands fa-twitter"></i></a>
+                <a href="#"
+                  class="text-medium rounded-full bg-gray-700 w-[35px] h-[35px] flex justify-center items-center text-white cursor-pointer"><i
+                    class="fa-brands fa-google-plus-g"></i></a>
+                <a href="#"
+                  class="text-medium rounded-full bg-gray-700 w-[35px] h-[35px] flex justify-center items-center text-white cursor-pointer"><i
+                    class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+
+            <!-- download -->
+            <div class="flex flex-col gap-3">
+              <h4 class="font-bold">TẢI ỨNG DỤNG HARAVAN MOBILE</h4>
+
+              <div class="flex flex-row gap-2">
+                <img src="./assets/img/footer/google-play-badge-logo-svgrepo-com.png" alt="google play download"
+                  class="w-[130px]">
+                <img src="./assets/img/footer/download-on-the-app-store-apple-logo-svgrepo-com.png"
+                  alt="apple store download" class="w-[130px]">
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap justify-between gap-5">
+            <!-- Giải pháp -->
+            <div class="flex flex-col gap-3 ">
+              <h3 class="font-bold text-base uppercase">Giải pháp</h3>
+              <ul class="list-discml-5">
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Xây dựng Website</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Social Commerce</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Quản lý bán hàng</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Bán lẻ Omnichannel</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Loyalty Marketing</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Bán hàng trên Sàn TMĐT</a>
+                </li>
+
+              </ul>
+            </div>
+
+            <!-- Về Haravan -->
+            <div class="flex flex-col gap-3 ">
+              <h3 class="font-bold text-base uppercase">Về Haravan</h3>
+              <ul class="">
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Giới thiệu</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Tin tức</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Báo chí</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Tuyển dụng</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Liên hệ</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Chính sách bảo mật</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Điều khoản dịch vụ</a>
+                </li>
+
+              </ul>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="flex flex-col gap-3 ">
+              <h3 class="font-bold text-base uppercase">Hỗ trợ</h3>
+              <ul class="">
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Đại lý</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Đối tác</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Học viện</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Kho giao diện</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Kho ứng dụng</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Quản lý giao hàng</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Thiết bị và bao bì</a>
+                </li>
+
+              </ul>
+            </div>
+
+            <!-- Website kinh doanh -->
+            <div class="flex flex-col gap-3 ">
+              <h3 class="font-bold text-base uppercase">Website kinh doanh</h3>
+              <ul class="">
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Thiết kế website thời trang</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Thiết kế website ẩm thực, nhà hàng, cafe, trà
+                    sữa...</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Thiết kế website mỹ phẩm</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Thiết kế website điện thoại</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Thiết kế website điện máy</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Thiết kế website mẹ và bé</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Thiết kế website nội thất</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Thiết kế website trang sứct</a>
+                </li>
+                <li class="text-xs text-[#3d5067] my-3">
+                  <a href="#" class="text-sm hover:text-[#2a7aff]">Thiết kế website doanh nghiệp</a>
+                </li>
+
+              </ul>
+            </div>
+
+            <!-- Website kinh doanh -->
+            <div class="flex flex-col gap-3 ">
+              <div class="flex flex-col gap-1">
+                <h3 class="font-bold text-base uppercase">Chứng chỉ ISO 27001</h3>
+                <h5 class="font-bold text-xs upppercase">Hệ thống quản lý an toàn thông tin</h5>
+              </div>
+
+              <div class="max-w-[220px]">
+                <img src="./assets/img/footer/haravan-27001-certificate_afdc43895d404cf0a15684831e010866_large.png"
+                  alt="">
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="p-5">
+        <div class="max-w-5xl mx-auto py-10">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <!-- Trụ sở chính -->
+            <div class="flex flex-col">
+              <h3 class="font-bold text-base uppercase">Trụ sở chính</h3>
+              <ul class="list-disc ml-5">
+                <li class="text-sm text-[#3d5067] my-3">
+                  Tầng 6, Tòa nhà Flemington, 182 Lê Đại Hành, P.15,
+                  Q.11, Hồ Chí Minh.
+                </li>
+                <li class="text-sm text-[#3d5067] my-3">
+                  Tổng đài hỗ trợ: <a class="font-bold">1900.636.099</a> ( Thứ 2 đến Thứ 6 từ 8h đến 18h; Thứ 7 và Chủ
+                  nhật từ 8h00 đến
+                  17h00 )
+                </li>
+                <li class="text-sm text-[#3d5067] my-3">
+                  Số hỗ trợ ngoài giờ: <a class="font-bold">0901.866.099</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Văn phòng Hà Nội -->
+            <div class="flex flex-col">
+              <h3 class="font-bold text-base uppercase">Văn phòng Hà Nội</h3>
+              <ul class="list-disc ml-5">
+                <li class="text-sm text-[#3d5067] my-3">
+                  Tầng 3, tòa nhà The Artemis, số 03 Lê Trọng Tấn, Khương Mai, Thanh Xuân, Hà Nội.
+                </li>
+                <li class="text-sm text-[#3d5067] my-3">
+                  Tổng đài hỗ trợ: <span class="font-bold">1900.636.099</span> ( Thứ 2 đến Thứ 6 từ 8h đến 18h; Thứ 7 và
+                  Chủ nhật từ 8h00 đến 17h00 )
+                </li>
+                <li class="text-sm text-[#3d5067] my-3">
+                  Hotline tư vấn dịch vụ: <span class="font-bold">0708.789.886</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- VĂN PHÒNG Bình Dương -->
+            <div class="flex flex-col">
+              <h3 class="font-bold text-base uppercase">VĂN PHÒNG Bình Dương</h3>
+              <ul class="list-disc ml-5">
+                <li class="text-sm text-[#3d5067] my-3">
+                  Số 38 đường D4, KDC Chánh Nghĩa, P. Chánh Nghĩa, Tp. Thủ Dầu Một, Tỉnh Bình Dương.
+                </li>
+                <li class="text-sm text-[#3d5067] my-3">
+                  Tổng đài hỗ trợ: <span class="font-bold">1900.636.099</span> ( Thứ 2 đến Thứ 6 từ 8h đến 18h; Thứ 7 và
+                  Chủ nhật từ 8h00 đến 17h00 )
+                </li>
+                <li class="text-sm text-[#3d5067] my-3">
+                  Hotline tư vấn dịch vụ: <span class="font-bold">0938.130.157</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Văn phòng Đắk Lắk -->
+            <div class="flex flex-col">
+              <h3 class="font-bold text-base uppercase">Văn phòng Đắk Lắk</h3>
+              <ul class="list-disc ml-5">
+                <li class="text-sm text-[#3d5067] my-3">
+                  Tòa nhà Viettel, số 48 Lý Tự Trọng, Tân An, Thành phố Buôn Ma Thuột, Đắk Lắk
+                </li>
+                <li class="text-sm text-[#3d5067] my-3">
+                  Tổng đài hỗ trợ: <a class="font-bold">1900.636.099</a> ( Thứ 2 đến Thứ 6 từ 8h đến 18h; Thứ 7 và Chủ
+                  nhật từ 8h00 đến 17h00 )
+                </li>
+                <li class="text-sm text-[#3d5067] my-3">
+                  Hotline tư vấn dịch vụ: <span class="font-bold">0817.279.879</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- HOTLINE TƯ VẤN TẠI TỈNH -->
+            <div class="flex flex-col">
+              <h3 class="font-bold text-base uppercase">HOTLINE TƯ VẤN TẠI TỈNH</h3>
+              <ul class="list-disc ml-5">
+                <li class="text-sm text-[#3d5067] my-3">
+                  Bình Dương, Đồng Nai, Vũng Tàu, Tây Ninh: <span class="font-bold">0938.130.157</span>
+                </li>
+                <li class="text-sm text-[#3d5067] my-3">
+                  An Giang, Cần Thơ, Đồng Tháp, Hậu Giang, Long An, Bạc Liêu: <span
+                    class="font-bold">0939.11.88.22</span>
+                </li>
+
+              </ul>
+            </div>
+
+            <!--  -->
+            <div class="flex flex-col">
+              <h3 class="font-bold text-base uppercase opacity-0">skfjdsk</h3>
+              <ul class="list-disc ml-5">
+                <li class="text-sm text-[#3d5067] my-3">
+                  Đắk Lắk, Đắk Nông, Gia Lai, Lâm Đồng, Quảng Ngãi, Phú Yên: <span class="font-bold">0817.279.879</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="border-t border-gray-300 p-5">
+        <div class="max-w-7xl mx-auto">
+          <div class="flex justify-center items-center">
+            <a href="#" class="font-bold opacity-80">
+              Liên hệ hỗ trợ
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </footer>
+
+  </main>
+
+</body>
+
+</html>
