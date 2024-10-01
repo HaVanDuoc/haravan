@@ -12,39 +12,260 @@
 
   <!-- CDN tailwind css -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- CDN DaisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <header class="flex flex-row justify-between items-center gap-5 p-5 text-sm">
-    <div class="flex flex-row items-center gap-5 ">
-      <div class="flex flex-row items-center gap-7 w-full">
+    <div class="flex flex-row items-center gap-5 w-full lg:w-auto">
+      <!-- logo -->
+      <div class="mr-auto">
         <a href="/"><img src="./assets/icon/logo.svg" alt="logo" width="150px"></a>
+      </div>
 
-        <div class="text-xl"><i class="fa-solid fa-magnifying-glass"></i></div>
+      <!-- Search -->
+      <div class="text-xl"><i class="fa-solid fa-magnifying-glass"></i></div>
 
-        <div>Website</div>
-        <div>Bán hàng đa kênh</div>
+      <!-- Menu -->
+      <div class="block lg:hidden">
+        <div class="drawer">
+          <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+          <div class="drawer-content">
+            <!-- Page content here -->
+            <label for="my-drawer" class=" drawer-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </label>
+          </div>
+          <div class="drawer-side z-[99]">
+            <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+
+            <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+              <!-- Top menu - Logo -->
+              <div class="py-3 border-b-2 border-b-gray-300">
+                <a href="/"><img src="./assets/icon/logo.svg" alt="logo" width="150px"></a>
+              </div>
+
+              <!-- Navigation -->
+              <section class="flex flex-col flex-1 !overflow-y-auto">
+                <div class="collapse collapse-arrow bg-base-200">
+                  <input type="radio" name="my-accordion-2" checked="checked" />
+                  <div class="collapse-title text-base font-medium">Website</div>
+                  <div class="collapse-content ml-5 border-l-4 border-l-blue-500">
+                    <div class="mb-3">
+                      <h5 class="font-bold">Website 1</h5>
+                      <p>Lorem ipsum dolor, sit amet </p>
+                    </div>
+                    <div class="mb-3">
+                      <h5 class="font-bold">Website 1</h5>
+                      <p>Lorem ipsum dolor, sit amet </p>
+                    </div>
+                    <div class="">
+                      <h5 class="font-bold">Website 1</h5>
+                      <p>Lorem ipsum dolor, sit amet </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="collapse collapse-arrow bg-base-200">
+                  <input type="radio" name="my-accordion-2" checked="checked" />
+                  <div class="collapse-title text-base font-medium">Bán hàng đa kênh</div>
+                  <div class="collapse-content ml-5 border-l-4 border-l-blue-500">
+                    <div class="mb-3">
+                      <h5 class="font-bold">Bán hàng đa kênh</h5>
+                      <p>Lorem ipsum dolor, sit amet </p>
+                    </div>
+                    <div class="mb-3">
+                      <h5 class="font-bold">Bán hàng đa kênh</h5>
+                      <p>Lorem ipsum dolor, sit amet </p>
+                    </div>
+                    <div class="">
+                      <h5 class="font-bold">Bán hàng đa kênh</h5>
+                      <p>Lorem ipsum dolor, sit amet </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="collapse collapse-arrow bg-base-200">
+                  <input type="radio" name="my-accordion-2" checked="checked" />
+                  <div class="collapse-title text-base font-medium">Marketing</div>
+                  <div class="collapse-content ml-5 border-l-4 border-l-blue-500">
+                    <div class="mb-3">
+                      <h5 class="font-bold">Marketing</h5>
+                      <p>Lorem ipsum dolor, sit amet </p>
+                    </div>
+                    <div class="mb-3">
+                      <h5 class="font-bold">Marketing</h5>
+                      <p>Lorem ipsum dolor, sit amet </p>
+                    </div>
+                    <div class="">
+                      <h5 class="font-bold">Marketing</h5>
+                      <p>Lorem ipsum dolor, sit amet </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="collapse collapse-arrow bg-base-200">
+                  <input type="radio" name="my-accordion-2" checked="checked" />
+                  <div class="collapse-title text-base font-medium">Quản lý bán hàng</div>
+                  <div class="collapse-content ml-5 border-l-4 border-l-blue-500">
+                    <div class="mb-3">
+                      <h5 class="font-bold">Quản lý bán hàng</h5>
+                      <p>Lorem ipsum dolor, sit amet </p>
+                    </div>
+                    <div class="mb-3">
+                      <h5 class="font-bold">Quản lý bán hàng</h5>
+                      <p>Lorem ipsum dolor, sit amet </p>
+                    </div>
+                    <div class="">
+                      <h5 class="font-bold">Quản lý bán hàng</h5>
+                      <p>Lorem ipsum dolor, sit amet </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Footer menu -->
+              <div class="absolute bottom-0 left-0 p-5 w-full bg-inherit">
+                <div class="flex flex-col gap-2 w-full">
+                  <button
+                    class="border-2 border-blue-300 flex justify-center items-center p-2 w-full text-blue-500 font-bold">
+                    Đăng nhập
+                  </button>
+                  <button
+                    class="border-2 border-blue-500 bg-blue-500 flex justify-center items-center p-2 w-full text-white font-bold">
+                    Dùng thử
+                  </button>
+                </div>
+              </div>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden lg:flex flex-row flex-wrap items-center gap-7 w-full">
+        <div class="dropdown dropdown-hover hover:text-[#08589d]">
+          <div tabindex="0" role="button" class="flex flex-row items-end gap-1 ">
+            Website
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded z-[1] p-2 shadow">
+            <li>
+              <a href="#" class="flex flex-col items-start text-black gap-0">
+                <p class="font-bold capitalize">Tổng quan</p>
+                <p class="text-nowrap">Bắt đầu website bán hàng</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex flex-col items-start text-black gap-0">
+                <p class="font-bold capitalize">Tính năng</p>
+                <p class="text-nowrap">Bắt đầu website bán hàng</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex flex-col items-start text-black gap-0">
+                <p class="font-bold capitalize">Kho giao diện</p>
+                <p class="text-nowrap">Bắt đầu website bán hàng</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex flex-col items-start text-black gap-0">
+                <p class="font-bold capitalize">Kho ứng dụng</p>
+                <p class="text-nowrap">Bắt đầu website bán hàng</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex flex-col items-start text-black gap-0">
+                <p class="font-bold capitalize">Dịch vụ</p>
+                <p class="text-nowrap">Bắt đầu website bán hàng</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex flex-col items-start text-black gap-0">
+                <p class="font-bold capitalize">Website doanh nghiệp</p>
+                <p class="text-nowrap">Bắt đầu website bán hàng</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="dropdown dropdown-hover hover:text-[#08589d]">
+          <div tabindex="0" role="button" class="flex flex-row items-end gap-1 ">
+            Bán hàng đa kênh
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded z-[1] p-2 shadow">
+            <li>
+              <a href="#" class="flex flex-col items-start text-black gap-0">
+                <p class="font-bold capitalize text-nowrap">Bán hàng đa kênh</p>
+                <p class="text-nowrap">Bắt đầu website bán hàng</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex flex-col items-start text-black gap-0">
+                <p class="font-bold capitalize text-nowrap">Haraweb - Bán hàng trên web</p>
+                <p class="text-nowrap">Bắt đầu website bán hàng</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex flex-col items-start text-black gap-0">
+                <p class="font-bold capitalize text-nowrap">Kho giao diện</p>
+                <p class="text-nowrap">Bắt đầu website bán hàng</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex flex-col items-start text-black gap-0">
+                <p class="font-bold capitalize text-nowrap">Kho ứng dụng</p>
+                <p class="text-nowrap">Bắt đầu website bán hàng</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex flex-col items-start text-black gap-0">
+                <p class="font-bold capitalize text-nowrap">Dịch vụ</p>
+                <p class="text-nowrap">Bắt đầu website bán hàng</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex flex-col items-start text-black gap-0">
+                <p class="font-bold capitalize text-nowrap">Website doanh nghiệp</p>
+                <p class="text-nowrap">Bắt đầu website bán hàng</p>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div>Marketing</div>
         <div>Quản lý bán hàng</div>
         <div>Bán hàng Livestream</div>
       </div>
     </div>
 
-    <div class="flex flex-row items-center gap-7">
-      <a href="#">Bảng giá</a>
-      <a href="#">Khách hàng</a>
-      <a href="#">Hỗ trợ</a>
-      <a href="#" class="text-[#0070d2] uppercase font-bold text-sm border border-b-[#0070d2]">Đăng nhập</a>
+    <div class="hidden lg:flex flex-row items-center gap-7">
+      <div class="flex flex-wrap items-center gap-7">
+        <a href="#">Bảng giá</a>
+        <a href="#">Khách hàng</a>
+        <a href="#">Hỗ trợ</a>
+        <a href="#" class="text-[#0070d2] uppercase font-bold text-sm border border-x-0 border-t-0 border-b-[#0070d2]">
+          Đăng nhập
+        </a>
+      </div>
       <button class="py-2 px-4 bg-[#0070d2] text-white font-bold rounded-sm shadow-lg uppercase">Dùng thử</button>
-    </div>
-
-    <div>
-
     </div>
   </header>
 
   <main>
-
     <!-- Banner -->
     <section class="flex flex-row items-center bg-[#6E3E89]">
       <div class="max-w-7xl mx-5 sm:mx-12 md:mx-20 2xl:mx-auto flex flex-row justify-between gap-24">
